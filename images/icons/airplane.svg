@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="19px" viewBox="0 0 27 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2AA1D6B1-A5FE-441D-9AE4-F2CD78783BC1</title>
+    <defs>
+        <path d="M9.65825658,0.670887803 L12.2277396,0.670887803 C13.6467153,0.670887803 15.3859722,1.65910899 16.1124827,2.87815622 L19.2926841,8.21527777 L25.0749619,8.21527777 C25.784514,8.21527777 26.3596841,8.79044791 26.3596841,9.5 C26.3596841,10.2095521 25.784514,10.7847222 25.0749619,10.7847222 L19.170507,10.7847222 L15.9901771,16.1218438 C15.2637951,17.3409167 13.5245382,18.329125 12.105434,18.329125 L9.53604095,18.329125 L14.0316181,10.7847222 L5.05275864,10.7847222 L3.20983745,13.9360174 L0.640392991,13.9360174 L3.23464543,9.5 L3.23464543,9.45760417 L0.665200977,5.06400831 L3.23464543,5.06400831 L5.07757947,8.21527777 L14.1537951,8.21527777 L9.65825658,0.670887803 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home--Main" transform="translate(-789.000000, -2046.000000)">
+            <g id="features-copy-4" transform="translate(733.000000, 1989.000000)">
+                <g id="Group" transform="translate(31.000000, 29.000000)">
+                    <g id="icon/maps/track_24px" transform="translate(25.000000, 28.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="airplane" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

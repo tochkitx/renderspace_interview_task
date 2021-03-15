@@ -1,0 +1,298 @@
+section {
+    padding: map-get($sizes, xxxlarge) 0;
+
+    &:nth-child(2n) {
+        background-color: map-get($colors, bg);
+    }
+
+    .intro {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            color: map-get($colors, dark-grey);
+            margin: 0 auto map-get($sizes, xxlarge) auto;
+            text-align: center;
+        }
+        p {
+            @include big-p();
+        }
+    }
+
+    &#home {
+        padding-bottom: 0;
+
+        & > div {
+            p {
+                @include big-p();
+                text-align: left;
+            }
+        }
+
+        .social {
+            margin: map-get($sizes, xxlarge) 0;
+            display: flex;
+
+            align-items: center;
+
+            a {
+                display: block;
+                margin: 0 map-get($sizes, medium) 0 0;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    img {
+                        transition: all map-get($timings, fast);
+                        filter: brightness(1.5);
+                    }
+                }
+            }
+        }
+
+        .bg {
+            @include breakpoint(sm) {
+                padding-right: 0;
+            }
+
+            .image-container {
+                height: 100%;
+                display: inline-flex;
+                align-items: flex-end;
+                background-image: url(../images/bg.svg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+
+                @include breakpoint(sm) {
+                    background-size: 200%;
+                    background-position: left;
+                    img {
+                        max-width: 200%;
+                        height: auto;
+                        max-height: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &#universities {
+        padding-bottom: map-get($sizes, xxxlarge);
+        h3 {
+            text-transform: uppercase;
+            color: map-get($colors, dark-grey);
+            font-size: map-get($sizes, xxnormal);
+            margin: 0 auto map-get($sizes, xxxlarge) auto;
+            opacity: 0.7;
+            letter-spacing: 2.1px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: map-get($sizes, large) map-get($sizes, large) map-get($sizes, xxlarge) map-get($sizes, large);
+
+            img {
+                opacity: 0.8;
+                transition: opacity map-get($timings, fast);
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &#services {
+        .row > div {
+            margin-top: 2rem;
+
+            article {
+                background: map-get($colors, white);
+                padding: map-get($sizes, xxnormal);
+                box-shadow: map-get($box-shadows, light);
+                border-radius: map-get($sizes, normal);
+                border: 3px solid map-get($colors, white);
+                transition: border map-get($timings, slow);
+                height: 100%;
+
+                h3 {
+                    font-size: map-get($sizes, medium);
+                }
+
+                &:hover {
+                    border: 3px solid map-get($colors, violet);
+                }
+
+                div {
+                    color: white;
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin-bottom: map-get($sizes, xlarge);
+
+                    &.spiral {
+                        @include service-icon('spiral', map-get($colors, violet));
+                    }
+                    &.square {
+                        @include service-icon('square', map-get($colors, red));
+                    }
+                    &.file-checked {
+                        @include service-icon('file-checked', map-get($colors, green));
+                    }
+                    &.home {
+                        @include service-icon('home', map-get($colors, blue));
+                    }
+                    &.airplane {
+                        @include service-icon('airplane', map-get($colors, light-red));
+                    }
+                }
+            }
+        }
+    }
+
+    &#news {
+        .row > div {
+            margin-top: 2rem;
+
+            article {
+                background: map-get($colors, white);
+                box-shadow: map-get($box-shadows, dark);
+                border-radius: map-get($sizes, normal);
+                height: 100%;
+
+                .title {
+                    padding: map-get($sizes, medium);
+
+                    .date {
+                        background: url(../images/icons/calendar.svg) no-repeat center left;
+                        color: map-get($colors, medium-grey);
+                        padding-left: map-get($sizes, medium);
+                    }
+
+                    a {
+                        margin: 0;
+
+                        h4 {
+                            color: map-get($colors, dark-grey);
+                            transition: color map-get($timings, fast);
+                        }
+
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            h4 {
+                                color: map-get($colors, violet);
+                            }
+                        }
+                    }
+                }
+
+                .fill {
+                    border-top-left-radius: map-get($sizes, normal);
+                    border-top-right-radius: map-get($sizes, normal);
+                }
+            }
+        }
+
+        a {
+            display: block;
+            margin: map-get($sizes, huge) auto 0 auto;
+        }
+    }
+
+    &#events {
+        .row > div {
+            margin-top: 2rem;
+
+            article {
+                height: 100%;
+                overflow: hidden;
+                background: map-get($colors, white);
+                box-shadow: map-get($box-shadows, dark);
+                border-radius: map-get($sizes, normal);
+                padding: map-get($sizes, medium) map-get($sizes, large);
+
+                & > div:first-child {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .date {
+                        background: map-get($colors, violet-with-opacity);
+                        padding: map-get($sizes, small) map-get($sizes, normal);
+                        color: map-get($colors, violet);
+                        border-radius: map-get($sizes, normal);
+
+                        span {
+                            display: block;
+                            font-weight: bold;
+                            text-align: center;
+
+                            &:first-child {
+                                font-size: map-get($sizes, medium);
+                            }
+                            &:last-child {
+                                font-size: map-get($sizes, xnormal);
+                            }
+                        }
+                    }
+
+                    h3 {
+                        color: map-get($colors, dark-grey);
+                        margin-left: map-get($sizes, normal);
+                    }
+                }
+
+                & > div:last-child {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row-reverse;
+
+                    @include breakpoint(sm) {
+                        display: block;
+                    }
+
+                    .time {
+                        background: url(../images/icons/clock.svg) no-repeat 0px 1px;
+                        color: map-get($colors, dark-grey);
+                        padding-left: map-get($sizes, medium);
+                    }
+                }
+            }
+        }
+    }
+
+    &#countries {
+        .row > div {
+            margin-top: 2rem;
+
+            .fill {
+                border-radius: map-get($sizes, normal);
+            }
+        }
+    }
+
+    &#apply {
+        padding: map-get($sizes, xxlarge) map-get($sizes, medium) map-get($sizes, xxxlarge) map-get($sizes, medium);
+
+        h2 {
+            margin: 0;
+        }
+        a {
+            margin-top: map-get($sizes, large);
+        }
+
+        @include breakpoint(sm) {
+            padding: map-get($sizes, xxlarge) 0 map-get($sizes, xxxlarge) 0;
+        }
+        @include breakpoint(md) {
+            padding: map-get($sizes, xxlarge) 0 map-get($sizes, xxxlarge) 0;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+form {
+    background: map-get($colors, white);
+    box-shadow: map-get($box-shadows, dark);
+    border-radius: map-get($sizes, normal);
+    padding: map-get($sizes, xxlarge) map-get($sizes, xxxlarge);
+
+    @include breakpoint(sm) {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    label {
+        display: block;
+        font-size: map-get($sizes, form);
+        margin: map-get($sizes, normal);
+    }
+
+    input {
+        width: 100%;
+        line-height: map-get($sizes, large);
+        padding: map-get($sizes, small) map-get($sizes, normal);
+        background: map-get($colors, white);
+        border: map-get($colors, form);
+        border-radius: map-get($sizes, small);
+        border: 1px solid map-get($colors, form-border);
+        color: map-get($colors, form);
+        font-size: map-get($sizes, form);
+        font-family: $font-family;
+        opacity: 0.5;
+        margin-left: 0;
+
+        &:focus {
+            outline: none !important;
+            border-color: map-get($colors, violet);
+            opacity: 1;
+        }
+
+        &.invalid {
+            border: 1px solid map-get($colors, form-error);
+            margin-left: 0;
+        }
+    }
+
+    .error {
+        font-size: map-get($sizes, form-error);
+        color: map-get($colors, form-error);
+        margin-left: map-get($sizes, normal);
+        margin-top: map-get($sizes, xsmall);
+        height: map-get($sizes, medium);
+    }
+
+    button {
+        border: none;
+        display: block;
+        width: max-content;
+        color: map-get($colors, white);
+        padding: map-get($sizes, xnormal) map-get($sizes, large);
+        font-size: map-get($sizes, button);
+        position: relative;
+        font-family: $font-family;
+        background: map-get($colors, violet);
+        border-radius: map-get($sizes, normal);
+        padding-right: map-get($sizes, xxxlarge);
+        margin-top: map-get($sizes, large);
+
+        &:hover {
+            cursor: pointer;
+            outline: none;
+            box-shadow: none;
+
+            &:after {
+                right: map-get($sizes, medium);
+            }
+        }
+
+        &:after {
+            @include button-arrow();
+            background-image: url(../images/icons/arrow.svg);
+        }
+    }
+}

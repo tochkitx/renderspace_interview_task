@@ -1,0 +1,69 @@
+.btn {
+    display: block;
+    width: max-content;
+    color: map-get($colors, white);
+    padding: map-get($sizes, xnormal) map-get($sizes, large);
+    font-size: map-get($sizes, button);
+    position: relative;
+    cursor: pointer;
+
+    &.big {
+        background: map-get($colors, violet);
+        border-radius: map-get($sizes, normal);
+        padding-right: map-get($sizes, xxxlarge);
+
+        &:after {
+            @include button-arrow();
+            background-image: url(../images/icons/arrow.svg);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            &:after {
+                right: map-get($sizes, medium);
+            }
+        }
+    }
+
+    &.no-bg {
+        color: map-get($colors, violet);
+        border-radius: map-get($sizes, normal);
+        padding-left: 0;
+        font-weight: bold;
+        font-size: map-get($sizes, normal);
+        padding-right: map-get($sizes, xxlarge);
+        margin: 0;
+
+        &:after {
+            @include button-arrow();
+            background-image: url(../images/icons/arrow-violet.svg);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            &:after {
+                right: map-get($sizes, medium);
+            }
+        }
+    }
+
+    &.with-border {
+        display: inline-block;
+        font-size: map-get($sizes, xnormal);
+        color: map-get($colors, grey);
+        border: 2px solid map-get($colors, violet);
+        border-radius: map-get($sizes, normal);
+        transition: all map-get($timings, fast);
+        line-height: map-get($sizes, large);
+        padding: map-get($sizes, small) map-get($sizes, large);
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: map-get($colors, violet);
+            color: map-get($colors, white);
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@mixin breakpoint($class) {
+    @if $class == sm {
+        @media screen and (max-width: 575px) {
+            @content;
+        }
+    } @else if $class == md {
+        @media screen and (min-width: 576px) and (max-width: 989px) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media screen and (min-width: 990px) and (max-width: 1099px) {
+            @content;
+        }
+    } @else if $class == xlg {
+        @media screen and (min-width: 1100px) and (max-width: ($max-width - 1)) {
+            @content;
+        }
+    } @else if $class == xxlg {
+        @media screen and (min-width: $max-width) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint mixin supports: sm, md, lg, xlg, xxl";
+    }
+}
+
+@mixin service-icon($class, $color) {
+    background-image: url('../images/icons/#{$class}.svg');
+    background-color: $color;
+}
+
+@mixin button-arrow() {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: map-get($sizes, large);
+    bottom: 0;
+    display: block;
+    width: map-get($sizes, normal);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right map-get($timings, fast);
+}
+
+@mixin big-p() {
+    text-align: center;
+    font-size: map-get($sizes, xxnormal);
+    line-height: map-get($sizes, xlarge);
+    margin: map-get($sizes, xxlarge) 0;
+}
+
+@mixin logo() {
+    width: 146px;
+}
+
+@mixin white-image() {
+    filter: invert(100%) sepia(100%) brightness(200%);
+}

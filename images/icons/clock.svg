@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>58217B38-1976-4398-B03C-C3CCB400EE1C</title>
+    <defs>
+        <path d="M9,0.666666625 C13.6023334,0.666666625 17.3333334,4.39762498 17.3333334,9 C17.3333334,13.6023334 13.6023334,17.3333334 9,17.3333334 C4.39762498,17.3333334 0.666666625,13.6023334 0.666666625,9 C0.666666625,4.39762498 4.39762498,0.666666625 9,0.666666625 Z M9,2.3333333 C5.31809998,2.3333333 2.3333333,5.31809998 2.3333333,9 C2.3333333,12.6819167 5.31809998,15.6666667 9,15.6666667 C12.6819167,15.6666667 15.6666667,12.6819167 15.6666667,9 C15.6666667,5.31809998 12.6819167,2.3333333 9,2.3333333 Z M8.16666666,4.83333331 L8.16666666,9 L12.3333333,9 L12.3333333,10.6666667 L6.49999999,10.6666667 L6.49999999,4.83333331 L8.16666666,4.83333331 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home--Main" transform="translate(-463.000000, -4197.000000)">
+            <g id="Group-9" transform="translate(148.000000, 3684.000000)">
+                <g id="features-copy-5" transform="translate(0.000000, 259.000000)">
+                    <g id="Time" transform="translate(315.000000, 249.000000)">
+                        <g id="time" transform="translate(0.000000, 5.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#373737" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,107 @@
+body,
+html {
+    color: $font-color;
+    font-family: $font-family;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    @include breakpoint(sm) {
+        font-size: 15px;
+    }
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
+    @include breakpoint(lg) {
+        font-size: 16px;
+    }
+    @include breakpoint(xlg) {
+        font-size: 16px;
+    }
+    @include breakpoint(xxlg) {
+        font-size: 16px;
+    }
+}
+
+// TYPOGRAPHY --------------------
+h1 {
+    font-size: map-get($sizes, xxlarge);
+    color: map-get($colors, dark-grey);
+
+    span {
+        color: map-get($colors, violet);
+    }
+}
+
+h2 {
+    color: map-get($colors, dark-grey);
+    font-size: map-get($sizes, xlarge);
+}
+
+h3 {
+    color: map-get($colors, dark-grey);
+    font-size: map-get($sizes, medium);
+}
+
+h4 {
+    font-size: map-get($sizes, xxnormal);
+}
+
+p {
+    font-size: map-get($sizes, normal);
+    line-height: map-get($sizes, xmedium);
+}
+
+// LINKS -------------------------
+a {
+    // transition-property: all;
+    // transition-duration: 0.2s;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+}
+
+// LISTS -------------------------
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: block;
+        margin: 0;
+    }
+}
+
+// HELPER CLASSES ----------------
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.row {
+    &.center {
+        justify-content: center !important;
+    }
+    &.between {
+        justify-content: space-between !important;
+    }
+    &.baseline {
+        align-items: baseline !important;
+    }
+}

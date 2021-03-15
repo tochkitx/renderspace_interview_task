@@ -1,0 +1,57 @@
+// COLORS ---------------------
+$colors: (
+    white: #ffffff,
+    light-grey: #7d7d7d,
+    grey: #373737,
+    medium-grey: #565656,
+    dark-grey: #2f2f2f,
+    violet: #717cff,
+    dark-violet: #8471ff,
+    violet-with-opacity: rgba(113, 124, 255, 0.2),
+    light-red: #fa706c,
+    red: #ff5959,
+    green: #70ce88,
+    blue: #5c96ff,
+    bg: #fafafa,
+    form: #354052,
+    form-border: #dfe3e9,
+    form-error: #c50707,
+    footer: #eeeeee,
+);
+
+$gutter: 20px;
+$max-width: 1920px;
+
+// FONTS & SIZES ---------------
+$font-family: Verdana, Geneva, Tahoma, sans-serif;
+$font-color: map-get($colors, light-grey);
+$sizes: (
+    xsmall: 0.2rem,
+    small: 0.5rem,
+    normal: 1rem,
+    xnormal: 1.1rem,
+    xxnormal: 1.3rem,
+    medium: 1.5rem,
+    xmedium: 1.7rem,
+    large: 2rem,
+    xlarge: 2.5rem,
+    mxlarge: 3rem,
+    xxlarge: 3.5rem,
+    xxxlarge: 5rem,
+    huge: 6rem,
+    button: 1.2rem,
+    form: 0.9rem,
+    form-error: 0.8rem,
+);
+
+// SHADOWS
+$box-shadows: (
+    light: 0 0 70px 0 rgba(0, 0, 0, 0.05),
+    dark: 0 0 40px 0 rgba(0, 0, 0, 0.1),
+);
+
+// TRANSITIONS TIMING
+$timings: (
+    slow: 0.3s,
+    fast: 0.5s,
+);
